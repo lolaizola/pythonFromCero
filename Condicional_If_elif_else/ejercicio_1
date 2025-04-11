@@ -1,0 +1,36 @@
+# Construye un programa que, al recibir como dato el salario de un profesor, calcule el incremento
+# del salario de acuerdo con el siguiente criterio:
+
+# - Si el salario es menor a 18000, el incremento es del 12%
+# - Si el salario está entre 18000 y 30000, el incremento es del 8%
+# - Si el salario está entre 30001 y 50000, el incremento es del 7%
+# - Si el salario es mayor a 50000, el incremento es del 6%
+
+# Se debe imprimir el nuevo salario y el incremento que se le ha aplicado.
+
+# Ejemplo de entrada:
+# 20000
+# Ejemplo de salida:
+# El incremento es de 1600.0
+# El nuevo salario es de 21600.0
+
+# Solución:
+salario = int(input("Ingrese el salario del profesor: "))
+
+if salario < 18000:
+    incremento = salario * 0.12
+    salario= salario + incremento
+elif salario >= 18000 and salario <= 30000:
+    incremento = salario * 0.08
+    salario+= incremento
+elif salario >= 30001 and salario <= 50000:
+    incremento = salario * 0.07
+    salario= salario + incremento
+elif salario > 50000:
+    incremento = salario * 0.06
+    salario= salario + incremento
+else:
+    print("El salario no es válido.")
+print("El incremento es de", incremento)
+print("El nuevo salario es de", salario)
+

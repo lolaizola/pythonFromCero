@@ -1,0 +1,34 @@
+# Construye un programa que determine, al recibir como datos dos numeros enteros,
+# si un numero es divisor del otro.
+# El programa debe imprimir el resultado de la división y el residuo.
+
+# Ejemplo de entrada:
+# 10
+# 5
+# Ejemplo de salida:
+# 10 es divisible entre 5
+# 10 / 5 = 2.0
+# 10 % 5 = 0
+
+
+# Solución:
+
+# Manejo de excepciones para asegurar que los números ingresados son enteros
+try:
+    numero1 = int(input("Ingrese el primer número: "))
+    numero2 = int(input("Ingrese el segundo número: "))
+except ValueError:
+    print("Error: Debes ingresar números enteros positivos.")
+    exit()
+
+# Verificar si los números son válidos y positivos
+if numero1 <= 0 or numero2 <= 0:
+    print("Error: Ambos números deben ser enteros positivos.")
+else:
+    if numero1 % numero2 == 0:
+        print(f"{numero1} es divisible entre {numero2}")
+        print(f"{numero1} / {numero2} = {int(numero1 / numero2)}")
+        print(f"{numero1} % {numero2} = {numero1 % numero2}")
+    else:
+        print(f"{numero1} no es divisible entre {numero2}")
+
