@@ -1,0 +1,75 @@
+# En una tienda departamental ofrecen descuentos a los clientes en la Navidad, de acuerdo con el monto de su compra.
+# El criterio para establecer el descuento es el siguiente:
+
+# - Si la compra es menor a 800, el descuento es del 8%
+# - Si la compra está entre 800 y 1500, el descuento es del 10%
+# - Si la compra está entre 1501 y 5000, el descuento es del 15%
+# - Si la compra es mayor a 5000, el descuento es del 20%
+# - Verificar que la entrada de datos sea numérica y positiva. Crear la excepcion cuando no se cumpla la condicion.
+
+# Construir un programa que, al recibir como dato el monto de la compra, calcule el precio real a pagar
+# y el descuento que se le ha aplicado. El programa debe imprimir el resultado de la operación.
+
+# Ejemplo de entrada:
+# 2000
+# Ejemplo de salida:
+# El precio de la compra es de 2000.0
+# El descuento es de 300.0
+# El precio real a pagar es de 1700.0
+
+# Solución:
+
+import time
+import os
+
+# Limpiar la consola
+def clear_console():
+    time.sleep(2)  # Esperar 2 segundos antes de limpiar la consola
+    try:
+        # Para Windows
+        os.system('cls')
+    except:
+        # Para Linux y MacOS
+        os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+# Manejo de excepciones para asegurar que el monto ingresado es un número positivo
+try:
+    clear_console()
+    monto_compra = float(input("Ingrese el monto de la compra: "))
+except ValueError:
+    print("Error: Debes ingresar un número positivo.")
+    clear_console()
+    exit()
+
+
+# Verificar que el monto de la compra es positivo
+if monto_compra <= 0:
+    print("Error: El monto de la compra debe ser un número positivo.")
+else:
+    # Inicializar el descuento y el precio real a pagar
+    descuento = 0.0
+    precio_real = 0.0
+
+    # Calcular el descuento según el monto de la compra
+    if monto_compra < 800:
+        descuento = monto_compra * 0.08
+        precio_real = monto_compra - descuento
+    elif 800 <= monto_compra <= 1500:
+        descuento = monto_compra * 0.10
+        precio_real = monto_compra - descuento
+    elif 1501 <= monto_compra <= 5000:
+        descuento = monto_compra * 0.15
+        precio_real = monto_compra - descuento
+    elif monto_compra > 5000:
+        descuento = monto_compra * 0.20
+        precio_real = monto_compra - descuento
+    else:
+        print("El monto de la compra no es válido.")
+
+
+    # Imprimir el resultado
+    print("El precio de la compra es de", monto_compra)
+    print("El descuento es de", descuento)
+    print("El precio real a pagar es de", precio_real)
+    # Fin del programa

@@ -1,0 +1,26 @@
+# Ejercicio 2: Exponer el uso basico de la funcion print.
+
+# Ejemplo 1:
+
+print('Este es un ejemplo de la funcion print')
+print("Este es otro ejemplo de la funcion print")
+
+print('''Este es un ejemplo de la funcion print
+con tres comillas simples''')
+
+print("""Este es un ejemplo de la funcion print
+con tres comillas dobles""")
+
+# Ejemplo 2: Argumentos de la funcion print
+
+print('Hola', 'mundo', '!', end=' ')
+print()
+print('Hola', 'mundo', '!', sep='-', end='.\n')
+
+# Ejemplo 3: Formateo de cadenas
+
+print('{} es {}'.format('Python', 'genial'))
+
+print('{0} es {1}'.format('Python', 'genial'))
+print('{1} es {0}'.format('Python', 'genial'))
+print('{0} es {0}'.format('Python', 'genial'))
