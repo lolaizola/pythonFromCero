@@ -1,6 +1,12 @@
 # Ejercicio 3: Obtener la fecha y hora actual del sistema.
 
 import datetime
+from global_functions import clear_console
+
+
+# Limpiar la consola
+
+clear_console()
 
 now = datetime.datetime.now()
 print("Fecha y hora actual:", now)

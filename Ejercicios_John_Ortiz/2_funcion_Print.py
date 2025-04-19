@@ -1,5 +1,15 @@
 # Ejercicio 2: Exponer el uso basico de la funcion print.
 
+# Obtener librerias
+
+from global_functions import clear_console
+
+
+# Limpiar la consola
+
+clear_console()
+
+
 # Ejemplo 1:
 
 print('Este es un ejemplo de la funcion print')

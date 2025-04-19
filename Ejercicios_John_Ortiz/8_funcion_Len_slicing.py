@@ -7,18 +7,8 @@ import os
 import time
 from typing import List
 from typing import Tuple
+from global_functions import clear_console
 
-# Limpiar la consola
-
-def clear_console():
-    time.sleep(1)  # Esperar 2 segundos antes de limpiar la consola
-    try:
-        # Para Windows
-        os.system('cls')
-    except:
-        # Para Linux y MacOS
-        os.system('clear')
-    os.system('cls' if os.name == 'nt' else 'clear')
 
 # Manejo de excepciones para validar que la lista no esté vacía y sea una lista válida
 try:

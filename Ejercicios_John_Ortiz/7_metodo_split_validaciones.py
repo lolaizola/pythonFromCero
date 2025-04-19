@@ -6,18 +6,7 @@
 import os
 import time
 from typing import List
-
-# Limpiar la consola
-
-def clear_console():
-    time.sleep(1)  # Esperar 2 segundos antes de limpiar la consola
-    try:
-        # Para Windows
-        os.system('cls')
-    except:
-        # Para Linux y MacOS
-        os.system('clear')
-    os.system('cls' if os.name == 'nt' else 'clear')
+from global_functions import clear_console
 
 # Manejo de excepciones para validar que la cadena no esté vacía y sea un nombre de archivo válido
 

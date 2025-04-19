@@ -1,35 +1,21 @@
-# Ejercicio 10: 
+# Ejercicio 10: Solicitar al usuario un numero n y calcular la suma de n + nn + nnn
 
 # Ejemplo: 2
 # suma = 2 + 22 + 222 = 246
-# 
-# 
-# # Limpiar la consola
-import os
-import time
 
-def clear_console():
-    time.sleep(1)  # Esperar 2 segundos antes de limpiar la consola
-    try:
-        # Para Windows
-        os.system('cls')
-    except:
-        # Para Linux y MacOS
-        os.system('clear')
-    os.system('cls' if os.name == 'nt' else 'clear')
-
+from global_functions import clear_console 
 
 # Manejo de excepciones para asegurar que el valor ingresado es un número positivo
 try:
     clear_console()
-    n = int(input("Ingrese el radio del circulo: "))
+    n = int(input("Ingrese el valor de n: "))
 except ValueError:
     print("Error: Debes ingresar un número positivo.")
     clear_console()
     exit()
 
 if n <= 0:
-    print("Error: El radio debe ser un número positivo o mayor que cero.")
+    print("Error: El valor ingresado debe ser un número positivo, mayor que cero.")
     clear_console()
     exit()
 else:

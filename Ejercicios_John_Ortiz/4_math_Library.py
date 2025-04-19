@@ -3,22 +3,9 @@
 # Importar la librería math para realizar cálculos matemáticos
 
 from math import pi
-import time
-import os
+from global_functions import clear_console
 
 
-# Manejo de excepciones para validar que el radio ingresado es un número positivo
-
-# Limpiar la consola
-def clear_console():
-    time.sleep(1)  # Esperar 2 segundos antes de limpiar la consola
-    try:
-        # Para Windows
-        os.system('cls')
-    except:
-        # Para Linux y MacOS
-        os.system('clear')
-    os.system('cls' if os.name == 'nt' else 'clear')
 
 # Manejo de excepciones para asegurar que el valor ingresado es un número positivo
 try:

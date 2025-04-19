@@ -5,18 +5,7 @@
 import calendar
 import os
 import time
-
-# Limpiar la consola
-
-def clear_console():
-    time.sleep(2)  # Esperar 2 segundos antes de limpiar la consola
-    try:
-        # Para Windows
-        os.system('cls')
-    except:
-        # Para Linux y MacOS
-        os.system('clear')
-    os.system('cls' if os.name == 'nt' else 'clear')
+from global_functions import clear_console
 
 # Manejo de excepciones para validar que la fecha no esté vacía y sea una fecha válida
 

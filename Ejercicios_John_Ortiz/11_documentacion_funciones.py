@@ -2,6 +2,9 @@
 
 from math import sin
 from datetime import datetime
+from global_functions import clear_console
+
+clear_console()
 
 print(abs.__doc__ )
 

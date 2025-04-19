@@ -1,7 +1,6 @@
 # Ejercicio 13:
-
-import os
 import time
+from global_functions import clear_console
 
 # Ejemplo: usar ""para crear una cadena de texto multilínea.""
 #          usar """ para crear una cadena de texto multilínea."""
@@ -18,19 +17,6 @@ import time
 #          usar \x para crear una cadena de texto multilínea.\x
 #          usar \u para crear una cadena de texto multilínea.\u
 
-# Solucion:
-
-# Limpiar la consola
-
-def clear_console():
-    time.sleep(2)  # Esperar 2 segundos antes de limpiar la consola
-    try:
-        # Para Windows
-        os.system('cls')
-    except:
-        # Para Linux y MacOS
-        os.system('clear')
-    os.system('cls' if os.name == 'nt' else 'clear')
 
 clear_console()
 
