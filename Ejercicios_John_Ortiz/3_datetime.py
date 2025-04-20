@@ -15,7 +15,7 @@ print("Fecha y hora actual:", now)
 
 formatted_date = now.strftime("%d-%m-%Y %H:%M:%S")
 print("Fecha y hora formateada:", formatted_date)
-print
+print()
 print("Fecha:", now.date())
 print("Hora:", now.time())
 print("Año:", now.year)
@@ -40,3 +40,7 @@ print("Número de zona horaria:", now.strftime("%Z"))
 print("Número de hora UTC:", now.strftime("%z"))
 print("Número de hora local:", now.strftime("%z"))
 print("Número de hora GMT:", now.strftime("%z"))
+
+print("Fin de programa")
+print()
+# Fin de programa

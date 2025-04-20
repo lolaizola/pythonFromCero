@@ -55,3 +55,8 @@ print()
 print("La fecha del evento es: %i/%i/%i" % fecha_evento)
 print()
 print("La fecha del evento es: {}/{}/{}".format(anio,mes,dia))
+print()
+
+print("Fin de programa")
+print()
+# Fin de programa

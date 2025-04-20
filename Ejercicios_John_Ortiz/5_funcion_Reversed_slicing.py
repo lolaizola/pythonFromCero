@@ -37,3 +37,6 @@ print("La cadena inversa es:", cadena[::-1])
 cadena_inversa_reversed = ''.join(reversed(cadena))
 print("La cadena invertida usando reversed() es:", cadena_inversa_reversed)
 print()
+print("Fin de programa")
+print()
+# Fin de programa

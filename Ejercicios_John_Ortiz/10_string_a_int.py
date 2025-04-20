@@ -1,6 +1,6 @@
 # Ejercicio 10: Solicitar al usuario un numero n y calcular la suma de n + nn + nnn
 
-# Ejemplo: 2
+# Ejemplo:
 # suma = 2 + 22 + 222 = 246
 
 from global_functions import clear_console 
@@ -27,10 +27,6 @@ else:
     print("La suma es:", suma)
     print()
 
+print("Fin de programa")
+print()
 # Fin de programa
-
-
-
-
- 
- 

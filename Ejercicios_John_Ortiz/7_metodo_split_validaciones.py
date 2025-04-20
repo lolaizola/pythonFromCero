@@ -37,3 +37,9 @@ else:
     print()
     print("La extensión del archivo es:", archivo.split(".")[-1])
     exit()
+
+print()
+
+print("Fin de programa")
+print()
+# Fin de programa

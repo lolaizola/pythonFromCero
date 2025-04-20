@@ -33,4 +33,7 @@ print('{} es {}'.format('Python', 'genial'))
 
 print('{0} es {1}'.format('Python', 'genial'))
 print('{1} es {0}'.format('Python', 'genial'))
-print('{0} es {0}'.format('Python', 'genial'))
+
+print("Fin de programa")
+print()
+# Fin de programa

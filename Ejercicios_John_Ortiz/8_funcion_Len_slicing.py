@@ -26,14 +26,13 @@ except ValueError as e:
     exit()
 
 # Obtener el primer y último elemento de la lista
-
-# Funcion length para contar el número de elementos en la lista
 primer_elemento = lista[0]
 ultimo_elemento = lista[-1]
 print("El primer elemento de la lista es:", primer_elemento)
 print("El último elemento de la lista es:", ultimo_elemento)
 print()
 
+# Funcion length para contar el número de elementos en la lista
 primer_elemento = lista[0]
 ultimo_elemento = lista[len(lista)-1]
 print("El primer elemento de la lista es:", primer_elemento)
@@ -49,12 +48,6 @@ print("El primer y último elemento de la lista son:")
 print(obtener_primer_y_ultimo_elemento(lista))
 print()
 
-print("El primer elemento de la lista es:", obtener_primer_y_ultimo_elemento(lista)[0])
-print("El último elemento de la lista es:", obtener_primer_y_ultimo_elemento(lista)[1])
+print("Fin de programa")
 print()
-
-print("El primer elemento de la lista es:", obtener_primer_y_ultimo_elemento(lista)[0])
-print("El último elemento de la lista es:", obtener_primer_y_ultimo_elemento(lista)[1])
-print()
-
-
+# Fin de programa

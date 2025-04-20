@@ -35,4 +35,5 @@ except ValueError as e:
 print(calendar.month(anio, mes))
 
 print("Fin de programa")
+print()
 # Fin de programa

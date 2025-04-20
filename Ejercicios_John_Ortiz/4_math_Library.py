@@ -28,3 +28,7 @@ else:
     print("El área del círculo es:", area)
     print()
     print("El área del círculo es: {:.2f}".format(area))
+
+print("Fin de programa")
+print()
+# Fin de programa

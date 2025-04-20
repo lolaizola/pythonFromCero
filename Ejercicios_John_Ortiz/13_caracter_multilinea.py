@@ -38,4 +38,8 @@ print(cadena)
 print()
 
 time.sleep(5)
+print()
+
 print("Fin de programa")
+print()
+# Fin de programa

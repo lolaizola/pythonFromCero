@@ -18,6 +18,7 @@ clear_console()
 fecha_usuario = input("Ingrese la fecha (dd/mm/yyyy): ")
 #validar_fecha(fecha_usuario)
 calcular_diferencia(fecha_usuario)
+print()
 print("Fin de programa")
 print()
 
